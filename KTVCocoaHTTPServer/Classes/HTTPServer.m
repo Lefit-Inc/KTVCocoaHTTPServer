@@ -412,6 +412,7 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_INFO; // | HTTP_LOG_FLAG_TRACE;
 - (BOOL)start:(NSError **)errPtr
 {
     HTTPLogTrace();
+    HTTPLogInfo(@"no dispatch_sync to serverQueue");
     
 //    __block
     BOOL success = YES;
